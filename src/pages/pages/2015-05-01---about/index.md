@@ -4,10 +4,12 @@ layout: page
 path: "/about"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](./1.jpg)
+I have 3+ years of development experience working along with multiple javascript frameworks and Angular 2+ (predominantly), At the initial stages I was working as a freelance ui developer for small startups, Where I was involved in developing clean reusable ui components.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+Then I started working with gymday as a full time front end developer where I got exposure to work with large scale products which are gymday crm, gymday business app, studioyou crm , studioyou web app and webstore.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+My core role with gymday is to build features for studioyou such as calendar, pos, scheduling, notifications, auto messages, reports, payments (recurring) and uprgrading entire product from angular 2 to 8.
+
+The framework and library I am currently working with are angular2+, react and gatsby.
+
