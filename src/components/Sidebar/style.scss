@@ -3,6 +3,7 @@
 
 .sidebar {
     width: 100%;
+    margin-top:2rem;
     &__inner {
         position: relative;
         padding: 25px 20px 0;
@@ -43,7 +44,12 @@
     .sidebar {
         lost-column: 5/12;
         &__inner {
-            padding: 30px 20px 0;
+            padding: 30px 20px 0px;
+            box-shadow: 0 2px 6px 1px rgba(74, 74, 74, 0.08);
+            border-radius: 0.625rem;
+            padding: 2rem;
+            background: #fff;
+            
             &:after {
                 background: $color-gray-border;
                 background: linear-gradient(to bottom, $color-gray-border 0%, $color-gray-border 48%, $color-white 100%);
@@ -52,7 +58,7 @@
                 width: 1px;
                 height: 540px;
                 top: 30px;
-                right: -10px;
+                right: -30px;
                 bottom: 0;
             }
         }

@@ -2,13 +2,16 @@
  * Generic
  */
 
+ $color-background : #191c27;
+
+
 html {
     font-size: $typographic-root-font-size;
 }
 
 body {
     font-family: $typographic-font-family;
-    color: $typographic-base-font-color;
+    color: #fff;
     line-height: $typographic-base-line-height;
     font-size: $typographic-base-font-size;
     -ms-text-size-adjust: 100%;
@@ -141,10 +144,15 @@ figcaption {
     margin-bottom: 0;
     text-align: center;
 }
-
-.layout {
-    lost-center: $layout-width;
+.layout-container{
+    height:100vh;
+    background: $color-background;
+    
+    .layout {
+        lost-center: $layout-width;
+    }
 }
+
 
 .content {
     &__inner {

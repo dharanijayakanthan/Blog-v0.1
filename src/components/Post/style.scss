@@ -1,7 +1,9 @@
 @import "../../assets/scss/variables";
 @import "../../assets/scss/mixins";
 .content__inner{
-	padding: 2rem;
+    padding: 2rem;
+    background:var(--color-background);
+
 }
 
 .post:nth-child(2) {
@@ -16,8 +18,14 @@
     --delay: calc(var(--i, 1) * 200ms);
 	animation: fadeIn 1200ms var(--delay) forwards;
 	opacity: 0;
-	transform: scale(0);
-    @include margin-bottom(1.25);
+    transform: scale(0);
+    border-radius: 8px;
+    padding:24px;
+    box-shadow: 0 2px 6px 1px rgba(74,74,74,.08);
+    border-radius: 10px;
+    padding: 18px;
+    background: #fff;
+    @include margin-bottom(2.25);
     &:last-child {
         @include margin-bottom(.5);
     }
@@ -42,7 +50,7 @@
     }
     &__meta {
         &-time {
-            font-size: $typographic-small-font-size;
+            font-size: $typographic-xs-font-size;
             color: $color-base;
             font-weight: 500;
             text-transform: uppercase;
@@ -52,10 +60,13 @@
         }
         &-category {
             &-link {
-                font-size: $typographic-small-font-size;
+                font-size: $typographic-xs-font-size;
                 color: $color-secondary;
                 font-weight: 500;
                 text-transform: uppercase;
+                position: absolute;
+                right: 0px;
+                top: -22px;
                 &:hover,
                 &:focus {
                     color: $color-primary;
