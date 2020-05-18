@@ -18,7 +18,9 @@ class Menu extends React.Component {
               {item.label}
             </Link>
           </li>
+         
         ))}
+        
       </ul>
     )
 

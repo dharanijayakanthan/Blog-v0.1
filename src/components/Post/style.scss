@@ -1,7 +1,22 @@
 @import "../../assets/scss/variables";
 @import "../../assets/scss/mixins";
+.content__inner{
+	padding: 2rem;
+}
+
+.post:nth-child(2) {
+    --i: 2;
+  }
+  
+  .post:nth-child(3) {
+    --i: 3;
+  }
 
 .post {
+    --delay: calc(var(--i, 1) * 200ms);
+	animation: fadeIn 1200ms var(--delay) forwards;
+	opacity: 0;
+	transform: scale(0);
     @include margin-bottom(1.25);
     &:last-child {
         @include margin-bottom(.5);
@@ -57,4 +72,11 @@
             border-bottom: 1px solid $color-primary;
         }
     }
+}
+
+@keyframes fadeIn {
+	100% { 
+		opacity: 1;
+		transform: scale(1);
+	}
 }
