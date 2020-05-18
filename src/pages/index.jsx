@@ -13,6 +13,22 @@ class IndexRoute extends React.Component {
     posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
+    posts.forEach(post => {
+      items.push(<Post data={post} key={post.node.fields.slug} />)
+    })
+
+    posts.forEach(post => {
+      items.push(<Post data={post} key={post.node.fields.slug} />)
+    })
+
+    posts.forEach(post => {
+      items.push(<Post data={post} key={post.node.fields.slug} />)
+    })
+
+    posts.forEach(post => {
+      items.push(<Post data={post} key={post.node.fields.slug} />)
+    })
+
 
     return (
       <Layout>

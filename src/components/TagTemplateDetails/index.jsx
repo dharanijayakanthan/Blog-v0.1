@@ -9,7 +9,7 @@ class TagTemplateDetails extends React.Component {
     posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
-
+   
     return (
       <div className="content">
         <div className="content__inner">

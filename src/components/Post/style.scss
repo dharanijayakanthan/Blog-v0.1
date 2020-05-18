@@ -1,41 +1,44 @@
 @import "../../assets/scss/variables";
 @import "../../assets/scss/mixins";
-.content__inner{
-    padding: 2rem;
-    background:var(--color-background);
+    
+    .content__inner{
+        background:var(--color-background);
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .post:nth-child(2) {
+        --i: 2;
+    }
+    .post:nth-child(3) {
+        --i: 3;
+    }
 
-}
-
-.post:nth-child(2) {
-    --i: 2;
-  }
-  
-  .post:nth-child(3) {
-    --i: 3;
-  }
-
+   
 .post {
     --delay: calc(var(--i, 1) * 200ms);
 	animation: fadeIn 1200ms var(--delay) forwards;
 	opacity: 0;
     transform: scale(0);
-    border-radius: 8px;
-    padding:24px;
     box-shadow: 0 2px 6px 1px rgba(74,74,74,.08);
-    border-radius: 10px;
     padding: 18px;
     background: #fff;
+    margin: 0 1rem 1rem 0;
+    height:100px;
     @include margin-bottom(2.25);
     &:last-child {
         @include margin-bottom(.5);
     }
     &__title {
-        font-size: $typographic-base-font-size * 1.6875;
+        font-size: $typographic-base-font-size * 1.2875;
         @include line-height(1.5);
         @include margin-top(0);
-        @include margin-bottom(.5);
+        @include margin-bottom(.5);white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
         &-link {
             color: $color-base;
+            
             &:hover,
             &:focus {
                 color: $color-base;
@@ -83,7 +86,30 @@
             border-bottom: 1px solid $color-primary;
         }
     }
+
+ 
+
+
 }
+
+@for $i from 1 through 30 { 
+    .post:nth-child(#{$i}) {
+      $h: (random(400) + 70) + px;
+      max-width:80%;
+    
+      width:$h;
+      $border: 5px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: $border; /* !importanté */
+      }
+    }
+  }
+
 
 @keyframes fadeIn {
 	100% { 
